@@ -1,5 +1,82 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
+.q7__box {
+  box-sizing: border-box;
+}
+
+.q7--float .q7__inner .q7__box {
+  float: left;
+  font-size: 16px;
+  width: 225px;
+}
+
+.q7--float .q7__inner .q7__box:nth-child(2) {
+  margin-left: 50px;
+}
+
+.is-table .q7__inner {
+  display: table;
+}
+
+.is-table .q7__inner .q7__box {
+  display: table-cell;
+  width: 225px;
+  vertical-align: middle;
+}
+
+.is-table .q7__inner .q7__box:nth-child(2) {
+  padding-left: 50px;
+}
+
+.is-inline-block .q7__inner {
+  font-size: 0;
+}
+
+.is-inline-block .q7__inner .q7__box {
+  width: 225px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.is-inline-block .q7__inner .q7__box:nth-child(2) {
+  margin-left: 50px;
+}
+
+.is-flex .q7__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.is-flex .q7__inner .q7__box {
+  width: 225px;
+}
+
+.is-full {
+  font-size: 0;
+}
+
+.is-stable {
+  width: 300px;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.is-flexible {
+  width: 100%;
+  margin-left: -300px;
+  padding-left: 350px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
 /* 回答はここに書いてね */
