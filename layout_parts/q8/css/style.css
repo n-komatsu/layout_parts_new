@@ -1,5 +1,315 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
+.button {
+  display: inline-block;
+}
+
+.button.is-small {
+  padding: 0 15px;
+  line-height: 26px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.button.is-small:nth-of-type(n + 2) {
+  margin-left: 10px;
+}
+
+.button.is-middle {
+  padding: 0 20px;
+  line-height: 32px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.button.is-middle:nth-of-type(n + 2) {
+  margin-left: 10px;
+}
+
+.button.is-large {
+  padding: 0 25px;
+  line-height: 38px;
+  border-radius: 7px;
+  font-size: 24px;
+}
+
+.button.is-large:nth-of-type(n + 2) {
+  margin-left: 10px;
+}
+
+.is-common {
+  background: #00bcd4;
+  color: #fff;
+}
+
+.is-error {
+  background: #ff4081;
+  color: #fff;
+}
+
+.is-disabled {
+  background: #e5e5e5;
+  color: #fff;
+}
+
+.is-shadow {
+  color: #222;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, .12);
+}
+
+.form-exercise {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ecf1f2;
+}
+
+.form-exercise .title {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-exercise .title:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  content: "";
+}
+
+.form-exercise .title .txt {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  background-color: #ECF1F2;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-field-wrap {
+  float: left;
+  width: 300px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.is-required {
+  color: #f00;
+}
+
+.input-field .name,
+.input-field .sex,
+.input-field .graduate,
+.input-field .mail {
+  float: left;
+  width: 100px;
+  line-height: 25px;
+  text-align: right;
+}
+
+.input-field .input-name-wrap {
+  float: right;
+  width: 180px;
+}
+
+.input-field .input-name {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.input-textarea {
+  float: right;
+  width: 380px;
+}
+
+.input-textarea textarea {
+  width: 100%;
+  height: 203px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+}
+
+.input-field li {
+  margin-top: 20px;
+}
+
+.input-field li:first-child {
+  margin-top: 0;
+}
+
+.sex-wrap {
+  float: right;
+}
+
+.label input {
+  display: none;
+}
+
+.label input:checked + .radio-txt:after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: '';
+}
+
+.label span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.label span:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: '';
+}
+
+.select-graduate-wrap {
+  position: relative;
+  float: right;
+  width: 180px;
+}
+
+.select-graduate {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.select-graduate-wrap:after {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
+
+.input-mail-wrap {
+  float: right;
+  width: 180px;
+}
+
+.input-mail {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  border: none;
+}
+
+input:focus {
+  box-shadow: 0 0 7px #00BCD4;
+  outline: 0;
+}
+
+.label-twenty {
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+}
+
+.label-twenty:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: -9px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  content: '';
+}
+
+.checkbox-twenty:checked + 
+.label-twenty:after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
+}
+
+.checkbox-twenty {
+  display: none;
+}
+
+.checkbox-wrap {
+  float: right;
+}
+
+.button-area {
+  text-align: right;
+}
+
+.button-area button {
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #00BCD4;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  border: none;
+  outline: 0;
+}
+
+.button-area button:active {
+  background-color: #FFF;
+  color: #00BCD4;
+}
 /* 回答はここに書いてね */

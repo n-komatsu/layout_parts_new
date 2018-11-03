@@ -31,27 +31,27 @@
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
-            <p class="q8__title">ー small ー</p>
-            <div class="buttton is-samll is-common">common</div>
-            <div class="buttton is-samll is-error">error</div>
-            <div class="buttton is-samll is-disabled">disabled</div>
-            <div>shadow</div>
+            <p class="q8__title clearfix">ー small ー</p>
+            <div class="button is-small is-common">common</div>
+            <div class="button is-small is-error">error</div>
+            <div class="button is-small is-disabled">disabled</div>
+            <div class="button is-small is-shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="button is-middle is-common">common</div>
+            <div class="button is-middle is-error">error</div>
+            <div class="button is-middle is-disabled">disabled</div>
+            <div class="button is-middle is-shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="button is-large is-common">common</div>
+            <div class="button is-large is-error">error</div>
+            <div class="button is-large is-disabled">disabled</div>
+            <div class="button is-large is-shadow">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -99,7 +99,62 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+            <form class="form-exercise">
+              <div class="title">
+                <p class="txt">Form Exercise</p>
+              </div>
+              <div class="clearfix">
+                <div class="input-field-wrap">
+                  <ul class="input-field">
+                    <li class="clearfix">
+                      <p class="name">名前<span class="is-required">*</span></p>
+                      <p class="input-name-wrap"><input type="text" class="input-name" required></p>
+                    </li>
+                    <li class="clearfix">
+                        <p class="sex">性別</p>
+                        <!-- <p class="input-sex-wrap"><input type="text" class="input-sex" required></p> -->
+                        <div class="sex-wrap">
+                          <label class="label">
+                            <input type="radio" name="male" value="male">
+                            <span class="radio-txt">男性</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="female" value="female">
+                            <span class="radio-txt">女性</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="clearfix">
+                        <p class="graduate">出身</p>
+                        <div class="select-graduate-wrap">
+                          <select name="graduate" id="" class="select-graduate">
+                            <option value="tokyo">東京</option>
+                            <option value="saitama">埼玉</option>
+                            <option value="chiba">千葉</option>
+                            <option value="kanagawa">神奈川</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="clearfix">
+                        <p class="mail">Eメール</p>
+                        <p class="input-mail-wrap"><input type="text" name="mail" placeholder="ex) hoge@gmail.com" required class="input-mail"></p>
+                      </li>
+                      <li class="clearfix">
+                        <p class="checkbox-wrap">
+                          <input type="checkbox" id="twenty" name="twenty" value="true" class="checkbox-twenty">
+                          <label for="twenty" class="label-twenty">20歳以上です</label>
+                        </p>
+                      </li>
+                  </ul>
+                  <div class="button-area">
+                    <button type="submit">送信</button>
+                  </div>
+                </div>
+                <div class="input-textarea">
+                  <textarea name="message" placeholder="何かあれば入力してください。"></textarea>
+                </div>
+              </div>
+            </form>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
